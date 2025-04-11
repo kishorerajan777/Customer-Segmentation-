@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 # Load dataset
 def load_data():
-    df = pd.read_csv(r"D:\Resume Projects\discount\Customers_Segmented.csv")
+    df = pd.read_csv("Customers_Segmented.csv")
     df.dropna(inplace=True)
     df.drop_duplicates(inplace=True)
     df.rename(columns={'Spending Score (1-100)': 'Spending Score'}, inplace=True)
